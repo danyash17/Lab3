@@ -1,5 +1,5 @@
 package controllers;
-
+import java.io.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -86,6 +86,12 @@ private double[] a={5,5,1,0,-11};
         alert.setContentText("Пожалуйста,проверьте правильность написания");
         alert.showAndWait();
     }
+    private boolean isReflected(double num){
+        String temp=Double.toString(num);
+        char last=temp.charAt(temp.length()-1);
+        String key=Character.toString(last);
+        return temp.startsWith(key);
+    }
     @FXML
 private void doGorner(){
         String from_s="0";
@@ -123,15 +129,25 @@ private void doGorner(){
             }
         }
         t00.setText(res[0][0]);
+        if(isReflected(t[0][1])) t02.setText("TRUE");
         t10.setText(res[1][0]);
+        if(isReflected(t[1][1])) t12.setText("TRUE");
         t20.setText(res[2][0]);
+        if(isReflected(t[2][1])) t22.setText("TRUE");
         t30.setText(res[3][0]);
+        if(isReflected(t[3][1])) t32.setText("TRUE");
         t40.setText(res[4][0]);
+        if(isReflected(t[4][1])) t42.setText("TRUE");
         t50.setText(res[5][0]);
+        if(isReflected(t[5][1])) t52.setText("TRUE");
         t60.setText(res[6][0]);
+        if(isReflected(t[6][1])) t62.setText("TRUE");
         t70.setText(res[7][0]);
+        if(isReflected(t[7][1])) t72.setText("TRUE");
         t80.setText(res[8][0]);
+        if(isReflected(t[8][1])) t82.setText("TRUE");
         t90.setText(res[9][0]);
+        if(isReflected(t[9][1])) t92.setText("TRUE");
         t01.setText(res[0][1]);
         t11.setText(res[1][1]);
         t21.setText(res[2][1]);
