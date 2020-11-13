@@ -7,6 +7,9 @@ import javafx.event.EventHandler;
 import javafx.scene.control.Alert.AlertType;
 import java.io.File;
 import java.io.IOException;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
 
 import javafx.stage.FileChooser;
 public class Controller {
@@ -107,9 +110,11 @@ private void doGorner(){
         for(int i=0;from<=to&&i<10;i++,from+=step){
             double sum=0;
             t[i][0]=from;
+            t[i][0] = Math.round(t[i][0]* 100.0)/100.0;
             for(int j=0;j<a.length;j++){
                 sum=sum*from+a[j];
             }
+            sum = Math.round(sum* 100.0)/100.0;
             t[i][1]=sum;
         }
         for (int i=0;i<3;i++){
