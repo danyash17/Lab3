@@ -1,4 +1,4 @@
-package sample;
+package controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -28,14 +28,7 @@ public class Controller {
 
     @FXML
     private MenuItem MenuHelpAbout;
-        {
-      MenuHelpAbout.setOnAction(new EventHandler<ActionEvent>() {
-          @Override
-          public void handle(ActionEvent actionEvent) {
-              showDialogWindow_About();
-          }
-      });
-    }
+
 
     @FXML
     private TextField XFromField;
@@ -51,17 +44,15 @@ public class Controller {
 
     @FXML
     private Button ClearButton;
+@FXML
     private void showDialogWindow_About() {
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Информация о программе");
-
         // alert.setHeaderText("Results:");
-        alert.setContentText("Выполнил студент РФиКТ 2 курса 8 группы Шкабара Даниил Сергеевич");
+    alert.setHeaderText("Выполнил студент РФиКТ 2 курса 8 группы ");
+        alert.setContentText("Шкабара Даниил Сергеевич");
 
         alert.showAndWait();
-    }
-    public Controller(){
-
     }
 }
 

@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
     <children>
         <Label layoutX="191.0" layoutY="3.0" prefHeight="22.0" prefWidth="262.0" text="Многочлен y=5x^4+5x^3+x^2−11">
             <font>
@@ -31,7 +31,7 @@
                 </Menu>
                 <Menu fx:id="MenuHelp" mnemonicParsing="false" text="Справка">
                     <items>
-                        <MenuItem fx:id="MenuHelpAbout" mnemonicParsing="false" text="О программе" />
+                        <MenuItem fx:id="MenuHelpAbout" mnemonicParsing="false"  text="О программе" onAction="#showDialogWindow_About" />
                     </items>
                 </Menu>
             </menus>
