@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -30,7 +31,7 @@
                 </Menu>
                 <Menu fx:id="MenuHelp" mnemonicParsing="false" text="Справка">
                     <items>
-                        <MenuItem fx:id="MenuHelpAbout" mnemonicParsing="false" text="О программе" onAction="#showDialogWindow_About" />
+                        <MenuItem fx:id="MenuHelpAbout" mnemonicParsing="false" text="О программе" />
                     </items>
                 </Menu>
             </menus>
@@ -45,7 +46,7 @@
                 <TextField fx:id="StepField" layoutX="327.0" layoutY="1.0" prefHeight="26.0" prefWidth="61.0" />
             </children>
         </AnchorPane>
-        <GridPane fx:id="grid" gridLinesVisible="true" layoutX="14.0" layoutY="111.0" prefHeight="518.0" prefWidth="570.0">
+        <GridPane gridLinesVisible="true" layoutX="14.0" layoutY="111.0" prefHeight="518.0" prefWidth="570.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -64,36 +65,117 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <TextArea fx:id="t00" prefHeight="200.0" prefWidth="200.0" />
-                <TextArea fx:id="t10" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
-                <TextArea fx:id="t20" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
-                <TextArea fx:id="t30" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
-                <TextArea fx:id="t40" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
-                <TextArea fx:id="t50" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5" />
-                <TextArea fx:id="t60" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6" />
-                <TextArea fx:id="t70" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7" />
-                <TextArea fx:id="t80" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="8" />
-                <TextArea fx:id="t90" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="9" />
-                <TextArea fx:id="t01" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
-                <TextArea fx:id="t11" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <TextArea fx:id="t21" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                <TextArea fx:id="t31" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                <TextArea fx:id="t41" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                <TextArea fx:id="t61" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                <TextArea fx:id="t51" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                <TextArea fx:id="t71" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                <TextArea fx:id="t81" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                <TextArea fx:id="t91" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-                <TextArea fx:id="t02" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
-                <TextArea fx:id="t12" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                <TextArea fx:id="t22" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                <TextArea fx:id="t32" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                <TextArea fx:id="t42" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                <TextArea fx:id="t52" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                <TextArea fx:id="t62" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                <TextArea fx:id="t72" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                <TextArea fx:id="t82" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                <TextArea fx:id="t92" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+
+            <Pane fx:id="p0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Label fx:id="l0" layoutX="70.0" layoutY="12.0" text="FALSE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p1" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="l1" layoutX="68.0" layoutY="10.0" text="FALSE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Label fx:id="l2" layoutX="70.0" layoutY="12.0" text="FALSE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Label fx:id="l3" layoutX="70.0" layoutY="12.0" text="FALSE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Label fx:id="l4" layoutX="70.0" layoutY="12.0" text="FALSE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p5" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <children>
+                  <Label fx:id="l5" layoutX="68.0" layoutY="13.0" text="FALSE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p6" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <children>
+                  <Label fx:id="l6" layoutX="70.0" layoutY="12.0" text="FALSE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p7" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <children>
+                  <Label fx:id="l7" layoutX="70.0" layoutY="12.0" text="FALSE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p8" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <children>
+                  <Label fx:id="l8" layoutX="70.0" layoutY="12.0" text="FALSE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p9" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <children>
+                  <Label fx:id="l9" layoutX="70.0" layoutY="12.0" text="FALSE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TextArea fx:id="t00" prefHeight="200.0" prefWidth="200.0" />
+            <TextArea fx:id="t01" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+            <TextArea fx:id="t02" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+            <TextArea fx:id="t03" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+            <TextArea fx:id="t04" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+            <TextArea fx:id="t05" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5" />
+            <TextArea fx:id="t06" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6" />
+            <TextArea fx:id="t07" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7" />
+            <TextArea fx:id="t08" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="8" />
+            <TextArea fx:id="t09" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="9" />
+            <TextArea fx:id="t10" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+            <TextArea fx:id="t11" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextArea fx:id="t12" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextArea fx:id="t13" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextArea fx:id="t14" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextArea fx:id="t15" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextArea fx:id="t16" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextArea fx:id="t17" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextArea fx:id="t18" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextArea fx:id="t19" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
             </children>
         </GridPane>
         <Text layoutX="85.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" wrappingWidth="16.5367431640625">
