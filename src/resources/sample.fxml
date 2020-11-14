@@ -24,14 +24,10 @@
         </Label>
         <MenuBar fx:id="Menu" layoutY="1.0">
             <menus>
-                <Menu fx:id="MenuFile" mnemonicParsing="false" text="Файл">
-                    <items>
-                        <MenuItem fx:id="MenuFileSave" mnemonicParsing="false" text="Сохранить" />
-                    </items>
-                </Menu>
                 <Menu fx:id="MenuHelp" mnemonicParsing="false" text="Справка">
                     <items>
-                        <MenuItem fx:id="MenuHelpAbout" mnemonicParsing="false" text="О программе" />
+                        <MenuItem fx:id="MenuHelpAbout" mnemonicParsing="false" onAction="#showDialogWindow_About" text="О программе" />
+                  <MenuItem fx:id="MenuHelpLegend" mnemonicParsing="false" text="Легенда" onAction="#showDialogWindow_Legend" />
                     </items>
                 </Menu>
             </menus>

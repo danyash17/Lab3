@@ -36,6 +36,7 @@ public class Controller {
     public TextArea t17;
     public TextArea t18;
     public TextArea t19;
+    public MenuItem MenuHelpLegend;
 
     @FXML
     private Pane p0;
@@ -126,6 +127,15 @@ private double[] a={5,5,1,0,-11};
         alert.setTitle("Информация о программе");
         alert.setHeaderText("Выполнил студент РФиКТ 2 курса 8 группы ");
         alert.setContentText("Шкабара Даниил Сергеевич");
+
+        alert.showAndWait();
+    }
+    @FXML
+    private void showDialogWindow_Legend() {
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Легенда");
+        alert.setHeaderText("КРАСНАЯ ЯЧЕЙКА - СУММА ЦИФР РАВНА 10 ");
+        alert.setContentText("ЗЕЛЁНЫЙ ТЕКСТ - ПЕРВЫЙ И ПОСЛЕДНИЙ\n СИМВОЛ СОВПАДАЮТ");
 
         alert.showAndWait();
     }
