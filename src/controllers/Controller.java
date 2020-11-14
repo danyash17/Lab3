@@ -253,17 +253,6 @@ private void doGorner(){
                 res[j][i]=Double.toString(t[j][i]);
             }
         }
-        System.out.println(isSumTen(res[0][1]));
-        System.out.println(isSumTen(res[1][1]));
-        System.out.println(isSumTen(res[2][1]));
-        System.out.println(isSumTen(res[3][1]));
-        System.out.println(isSumTen(res[4][1]));
-        System.out.println(isSumTen(res[5][1]));
-        System.out.println(isSumTen(res[6][1]));
-        System.out.println(isSumTen(res[7][1]));
-        System.out.println(isSumTen(res[8][1]));
-        System.out.println(isSumTen(res[9][1]));
-
         t00.setText(res[0][0]);
         if(isReflected(t[0][1])) {
             l0.setText("TRUE");
