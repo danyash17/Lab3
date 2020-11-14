@@ -194,7 +194,7 @@
                 <Font name="System Bold" size="16.0" />
             </font>
         </Button>
-        <Button fx:id="ClearButton" layoutX="359.0" layoutY="655.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="156.0" text="Очистить поля">
+        <Button fx:id="ClearButton" layoutX="359.0" layoutY="655.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="156.0" text="Очистить поля" onAction="#clearall">
             <font>
                 <Font name="System Bold" size="16.0" />
             </font>

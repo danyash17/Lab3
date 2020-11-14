@@ -131,6 +131,62 @@ private double[] a={5,5,1,0,-11};
         alert.showAndWait();
     }
     @FXML
+    private void clearall(){
+        XToField.setText(null);
+        XFromField.setText(null);
+        StepField.setText(null);
+        t00.setText(null);
+        t01.setText(null);
+        t02.setText(null);
+        t03.setText(null);
+        t04.setText(null);
+        t05.setText(null);
+        t06.setText(null);
+        t07.setText(null);
+        t08.setText(null);
+        t09.setText(null);
+        t10.setText(null);
+        t11.setText(null);
+        t12.setText(null);
+        t13.setText(null);
+        t14.setText(null);
+        t15.setText(null);
+        t16.setText(null);
+        t17.setText(null);
+        t18.setText(null);
+        t19.setText(null);
+        p0.setStyle("-fx-background-color: white;");
+        p1.setStyle("-fx-background-color: white;");
+        p2.setStyle("-fx-background-color: white;");
+        p3.setStyle("-fx-background-color: white;");
+        p4.setStyle("-fx-background-color: white;");
+        p5.setStyle("-fx-background-color: white;");
+        p6.setStyle("-fx-background-color: white;");
+        p7.setStyle("-fx-background-color: white;");
+        p8.setStyle("-fx-background-color: white;");
+        p9.setStyle("-fx-background-color: white;");
+        l0.setText("FALSE");
+        l0.setStyle("-fx-text-fill: #000000");
+        l1.setText("FALSE");
+        l1.setStyle("-fx-text-fill: #000000");
+        l2.setText("FALSE");
+        l2.setStyle("-fx-text-fill: #000000");
+        l3.setText("FALSE");
+        l3.setStyle("-fx-text-fill: #000000");
+        l4.setText("FALSE");
+        l4.setStyle("-fx-text-fill: #000000");
+        l5.setText("FALSE");
+        l5.setStyle("-fx-text-fill: #000000");
+        l6.setText("FALSE");
+        l6.setStyle("-fx-text-fill: #000000");
+        l7.setText("FALSE");
+        l7.setStyle("-fx-text-fill: #000000");
+        l8.setText("FALSE");
+        l8.setStyle("-fx-text-fill: #000000");
+        l9.setText("FALSE");
+        l9.setStyle("-fx-text-fill: #000000");
+    }
+    @FXML
     private void showDialogWindow_Legend() {
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Легенда");
